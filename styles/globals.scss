@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+// Fonts Weight (Poppins):
+// Light     300
+// Regular   400
+// Medium    500
+// Semi-bold 600
+// Bold      700
+
+html,
+body {
+  font-family: 'Philosopher', sans-serif;
+  background-color: #1C1C28;
+  padding: 0.7rem;
+
+  h1{
+    margin-top: 0;
+  }
+
+}
+
+*{
+  box-sizing: border-box;
+}

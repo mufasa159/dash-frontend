@@ -1,0 +1,105 @@
+@import '../styles/variable.scss';
+
+.edit{
+   font-family: 'Poppins', sans-serif;
+   max-width: 500px;
+   margin: auto;
+
+   .card{
+      background-color: $secondary-background;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+   }
+
+   a{
+      text-decoration: none;
+      color: $primary-white;
+      padding-bottom: 20px;
+      transition: 0.3s;
+
+      &:hover {
+         color: $primary-orange;
+      }
+   }
+   
+   h2{
+      color: $primary-orange;
+      margin: 0;
+   }
+
+   input{
+      width: 100%;
+      min-height: 35px;
+      font-size: 15px;
+      border-radius: 0px;
+      padding: 0;
+      border: none;
+      border-bottom: 1px solid $primary-grey;
+      outline: none;
+      outline-style: none;
+      outline-offset: none;
+      outline-color: none;
+      background-color: transparent;
+      margin: 8px 0px 0px 0;
+      color: rgb(243, 243, 243);
+      font-family: 'Poppins', sans-serif;
+
+      ::placeholder, :-ms-input-placeholder, ::-webkit-input-placeholder, ::-moz-placeholder{
+         color: #FF5C5C!important;
+         opacity: 1;
+      }
+   }
+
+   button{
+      padding: 10px 15px;
+      color: $primary-white;
+      background-color: $secondary-grey;
+      border: none;
+      outline: none;
+      outline-offset: none;
+      outline-style: none;
+      outline-color: none;
+      outline-width: none;
+      cursor: pointer;
+      min-width: 90px;
+      border-radius: 7px;
+      margin-top: 20px;
+      text-transform: uppercase;
+      transition: 0.3s;
+
+      &:hover {
+         color: $secondary-background;
+         background-color: $primary-orange;
+      }
+   }
+
+   small{
+      color: $primary-white;
+   }
+
+   select {
+      //border-radius: 50px;
+      width: 100%;
+      padding: 6px 0px;
+      color: $primary-red;
+      margin: 15px 0px 5px 0px;
+      background-color: $secondary-background;
+      border: none;
+      border-bottom: 1px solid $primary-grey;
+      outline: none;
+      outline-offset: none;
+      outline-style: none;
+      outline-color: none;
+      outline-width: none;
+      font-family: 'Poppins', sans-serif;
+
+      option{
+         padding: 0;
+         margin: 0;
+      }
+   }
+
+
+}
+

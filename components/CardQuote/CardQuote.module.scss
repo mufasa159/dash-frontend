@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
+@import '../styles/variable.scss';
+
+.header{
+   color: $primary-yellow;
+   padding: 10px 0px 5px 20px;
+   background: $secondary-background;
+   margin-bottom: 0;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   border-radius: 15px 15px 0px 0px;
+
+   h3{
+      margin: 0;
+      padding: 0.5rem;
+   }
+}
+
+.quotesDisplay{
+   border-radius: 0px 0px 15px 15px;
+   background-color: $secondary-background;
+   padding: 0px 30px 30px 30px;
+   word-wrap: break-word;
+   overflow: hidden;
+
+   p{
+      font-size: 20px;
+      color: $primary-white;
+      padding: 0;
+      margin: 0px 0px 10px 0px;
+   }
+
+   .author{
+      font-family: 'Poppins', sans-serif;
+      color: $primary-yellow;
+      text-align: right;
+      float: right;
+      padding-right: 12px;
+   }
+}

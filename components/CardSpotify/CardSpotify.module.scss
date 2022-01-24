@@ -1,0 +1,66 @@
+@import '../styles/variable.scss';
+
+.header{
+   padding: 10px 0px 5px 20px;
+   background: $secondary-background;
+   margin-bottom: 0;
+   color: $primary-green;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   border-radius: 15px 15px 0px 0px;
+
+   h3{
+      margin: 0;
+      padding: 0.5rem;
+   }
+}
+
+.spotifyDisplay{
+   border-radius: 0px 0px 15px 15px;
+   background-color: $secondary-background;
+   padding: 0px 30px 30px 30px;
+   font-family: 'Poppins', sans-serif;
+   display: inline-flex;
+
+   .track {
+      margin: 10px 0px 0px 0px;
+
+      .coverArt {
+         border: 1px solid $primary-background;
+         width: 95px;
+         height: 95px;
+         margin-right: 15px;
+         border-radius: 10px;
+      }
+
+      .text{
+         line-height: 18px;
+
+         a, small{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+         }
+
+         .title{
+            max-width: 95px;
+            
+            a {
+               text-decoration: none;
+               color: $primary-white;
+               transition: 0.3s;
+               font-size: 12px;
+               
+               &:hover{
+                  color: $primary-green;
+               }
+            }
+         }
+
+         small{
+            color: $primary-grey;
+            font-size: 11px;
+         }
+      }
+   }
+}

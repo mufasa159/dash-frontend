@@ -1,0 +1,83 @@
+@import '../styles/variable.scss';
+
+.header{
+   color: $primary-orange;
+   padding: 10px 0px 5px 20px;
+   background: $secondary-background;
+   margin-bottom: 0;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   border-radius: 15px 15px 0px 0px;
+
+   h3{
+      margin: 0;
+      padding: 0.5rem;
+   }
+}
+
+.habitsDisplay{
+   border-radius: 0px 0px 15px 15px;
+   background-color: $secondary-background;
+   padding: 0px 30px 30px 30px;
+   margin: 0;
+   font-family: 'Volkhov', serif;
+   font-family: 'Poppins', monospace;
+
+   h4{
+      color: $primary-white;
+      margin: 0px 0px 10px 0px;
+   }
+
+   .habits {
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      margin: 0px 0px 6px 0px;
+
+      .left {
+         float: left;
+         width: 70%;
+
+         p {
+            margin: 0;
+            color: $primary-white;
+            font-size: 14px;
+            width: 100%;
+         }
+   
+         small {
+            color: $primary-grey;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+         }
+      }
+
+      .right {
+         width: 30%;
+         float: right;
+         text-align: right;
+   
+         button{
+            padding: 10px 15px;
+            color: $primary-white;
+            background-color: $secondary-background;
+            border: 1px solid $primary-orange;
+            outline: none;
+            outline-offset: none;
+            outline-style: none;
+            outline-color: none;
+            outline-width: none;
+            cursor: pointer;
+            border-radius: 50px;
+         }
+   
+      }
+   }
+
+   a {
+      font-size: 12px;
+      text-decoration: none;
+      color: $primary-orange;
+   }
+}
