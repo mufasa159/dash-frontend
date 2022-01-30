@@ -19,7 +19,7 @@ const Habits: NextPage = () => {
       .then((res) => res.json())
       .then(data => {
          setHabits(data);
-       }).catch((e) => {console.log(e)});
+      }).catch((e) => {console.log(e)});
    }, [countRef.current])
 
    const handleRemove = async (e:React.ChangeEvent<any>) => {
