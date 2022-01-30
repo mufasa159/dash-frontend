@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState, useRef} from 'react';
 import styles from '../styles/habits.module.scss';
 import Link from 'next/dist/client/link';
 import Head from 'next/dist/shared/lib/head';
@@ -12,6 +12,8 @@ const Habits: NextPage = () => {
    const [description, setDescription] = useState("");
    const REST_API_URL = process.env.dbServerUrl;
 
+   const countRef = useRef(0);
+
    useEffect(()=>{
       fetch(REST_API_URL + "/habits")
       .then((res) => res.json())
@@ -21,6 +23,7 @@ const Habits: NextPage = () => {
    })
 
    const handleRemove = async (e:React.ChangeEvent<any>) => {
+      countRef.current++;
       e.preventDefault();
       try {
          const habitToDelete = { id };
@@ -51,6 +54,7 @@ const Habits: NextPage = () => {
    }
 
    const handleSubmit = async (e: React.ChangeEvent<any>) => {
+      countRef.current++;
       e.preventDefault();
       try {
         const user = {name, description};
