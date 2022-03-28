@@ -6,7 +6,7 @@
 |Status        | In Progress |
 
 Note: It's meant to run locally (authentication stuff felt too frustrating to code), but there's a **[demo](https://pmsdashboard.herokuapp.com)** version available (without NewsAPI)  
-Also, here's a bunch of [screenshots](#) of what it supposed to look like when run locally
+Also, here's a bunch of [screenshots](/assets/screenshots/) of what it supposed to look like when run locally
 
 ### Description
 
