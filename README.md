@@ -34,7 +34,11 @@ Open `next.config.js` file and update the environment variables:
 |`spotifyClientSecret` | Go to your app (from previous row) on Soptify for Developers and click `SHOW CLIENT SECRET`. Then copy `Client Secret`|
 |`spotifyRefreshToken`| I don't exactly remember but I think I manually cutomized URL for this (i.e. `https://accounts.spotify.com/authorize?response_type=code&client_id=$CLIENT_ID&scope=user-top-read&redirect_uri=http%3A%2F%2Flocalhost%3A3000`), but you can use [spotify-refresh-token-generator](https://spotify-refresh-token-generator.netlify.app/#info). I feel like there is something I'm forgetting about this but I'll update as I make progress|
 
+### Google Calendar
 
+The annoying part of this. After setting up the API server, you'll have to fetch calendar events twice apparently. I am still working on it. but for now, there's no need to do anything in the front-end for getting calendar events.
+  
+  
 Once all variables have been updated, run:
 ```
 npm run dev
@@ -58,7 +62,7 @@ Quote : https://theysaidso.com/api/#js
 - [x] News
 - [x] Weather
 - [x] Spotify
-- [ ] Google Calendar
+- [x] Google Calendar
 - [ ] Gmail and Mail
 - [ ] Reminders
 - [ ] Daily Journal
