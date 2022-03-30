@@ -1,0 +1,61 @@
+@import '../styles/variable.scss';
+
+.header{
+   color: $primary-yellow;
+   padding: 10px 0px 5px 20px;
+   background: $secondary-background;
+   margin-bottom: 0;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+   border-radius: 15px 15px 0px 0px;
+
+   h3{
+      margin: 0;
+      padding: 0.5rem;
+   }
+}
+
+.calendarDisplay{
+   border-radius: 0px 0px 15px 15px;
+   background-color: $secondary-background;
+   padding: 0px 30px 30px 30px;
+   margin: 0;
+   font-family: 'Volkhov', serif;
+   font-family: 'Poppins', monospace;
+
+   h4{
+      color: $primary-white;
+      margin: 0px 0px 10px 0px;
+   }
+
+   p {
+      margin: 0;
+      color: $primary-white;
+      width: 100%;
+      font-size: 14px;
+   }
+
+   span {
+      color: $primary-grey;
+      font-size: 12px;
+   }
+
+   .soon {
+      color: $primary-red;
+      font-size: 12px;
+   }
+
+   a {
+      text-decoration: none;
+      color: $primary-yellow;
+      transition: 0.3s;
+
+      &:hover {
+         color: $primary-blue;
+      }
+   }
+
+   .eventListMargin {
+      margin-bottom: 10px;
+   }
+}
