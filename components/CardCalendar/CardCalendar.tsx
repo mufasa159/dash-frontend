@@ -20,6 +20,7 @@ interface Events {
       self: boolean
    },
    start: {
+      date: string,
       dateTime: string,
       timeZone: string
    },
@@ -91,12 +92,21 @@ export default class CardCalendar extends React.Component {
                   <div>
                      {events.map((event:Events, index:number) => (
                         <div key={index}>
-                           {moment.duration(moment(event.start.dateTime).diff(moment())).asHours() < 10 ? (
-                              <p className={styles.soon}>{moment(event.start.dateTime).format("dddd, hh:mm A")}</p>
+                           {event.start.date != "" && event.start.dateTime == null? (
+                              <>
+                                 <p className={styles.allday}>{moment(event.start.date).format("dddd, DD MMMM YYYY")}</p>
+                                 <p className={styles.eventListMargin}>{event.summary}</p>
+                              </>
                            ) : (
-                              <p><span>{moment(event.start.dateTime).format("dddd, hh:mm A")}</span> </p>
+                              <>
+                                 {moment.duration(moment(event.start.dateTime).diff(moment())).asHours() < 10 ? (
+                                    <p className={styles.soon}>{moment(event.start.dateTime).format("dddd, hh:mm A")}</p>
+                                 ) : (
+                                    <p><span>{moment(event.start.dateTime).format("dddd, hh:mm A")}</span> </p>
+                                 )}
+                                 <p className={styles.eventListMargin}>{event.summary}</p>
+                              </>
                            )}
-                           <p className={styles.eventListMargin}>{event.summary}</p>
                         </div>
                      ))}
                   </div>
