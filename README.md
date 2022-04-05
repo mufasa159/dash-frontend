@@ -6,11 +6,18 @@
 |Status        | In Progress |
 
 Note: It's meant to run locally (authentication stuff felt too frustrating to code), but there's a **[demo](https://pmsdashboard.herokuapp.com)** version available (without NewsAPI)  
-Also, here's a bunch of [screenshots](/assets/screenshots/) of what it supposed to look like when run locally
+Also, this is what it supposed to look like when run locally:  
+  
+![pmsdash-screenshot](/assets/screenshots/pmsdashboard_2022-03-30.png "PMS Dash")
 
 ### Description
 
+Dash is sort of like a PMS (Productivity Management System). To put it simply, it’s a personal dashboard that includes daily essential productivity tools such as calendar, todo-list, habit-tracker, news updates, weather etc. Having all these tools in one place just makes life easier. This project has evolved from one of my previous projects called Robin, which was fully written in python and used tkinter for its GUI. Due to lack of compatibility and the need of frequent troubleshooting on Robin, project Dash was started as a way of eliminating most of those issues.
 
+Original Plan for User Interface : [PMS Dash](https://www.figma.com/file/C66s9Mu57pFZMMAubdlxHk/productivity-dashboard?node-id=0:1)  
+What Robin looked like : [Robin V2.1](https://www.figma.com/file/kZOJU2mVysRBVoG0aglQuK/robin_main)
+
+  
 ---
 
 ### Setting Up Local Dev Environment
