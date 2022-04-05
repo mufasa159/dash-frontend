@@ -4,6 +4,7 @@ import moment from "moment";
 import Link from 'next/dist/client/link'
 
 interface Events {
+   [x: string]: any;
    kind: string,
    htmlLink: URL,
    created: string,
