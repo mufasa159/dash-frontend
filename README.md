@@ -72,9 +72,7 @@ Quote : https://theysaidso.com/api/#js
 - [x] Google Calendar
 - [ ] Gmail and Mail
 - [ ] Reminders
-- [ ] Daily Journal
-- [ ] Vision Board
-- [ ] Website Subscriptions
+- [ ] RSS (?)
 - [ ] Custom Analytics
    - [ ] mufasa.cc
    - [ ] mufasa.cool
