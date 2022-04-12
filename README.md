@@ -5,8 +5,7 @@
 |Start Date    | Nov 13, 2021  |
 |Status        | In Progress |
 
-Note: It's meant to run locally (authentication stuff felt too frustrating to code), but there's a **[demo](https://pmsdashboard.herokuapp.com)** version available (without NewsAPI)  
-Also, this is what it supposed to look like when run locally:  
+Note: It's meant to run locally (authentication stuff felt too frustrating to code), but there's a **[demo](https://pmsdashboard.herokuapp.com)** version available (without NewsAPI). Also, this is what it supposed to look like when run locally:  
   
 ![pmsdash-screenshot](/assets/screenshots/pmsdashboard_2022-03-30.png "PMS Dash")
 
@@ -21,6 +20,8 @@ What Robin looked like : [Robin V2.1](https://www.figma.com/file/kZOJU2mVysRBVoG
 ---
 
 ### Setting Up Local Dev Environment
+
+First, setup the [API server](https://github.com/mufasa159/dash-backend) and keep it running while accessing frontend.
 
 Install node version 16.13.0  
 ```
