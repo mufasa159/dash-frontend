@@ -77,6 +77,3 @@ Quote : https://theysaidso.com/api/#js
 - [ ] Reminders
 - [ ] RSS (?)
 - [ ] Custom Analytics
-   - [ ] mufasa.cc
-   - [ ] mufasa.cool
-   - [ ] muhfasul.com
