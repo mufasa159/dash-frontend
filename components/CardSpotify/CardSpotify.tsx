@@ -42,14 +42,14 @@ export default class CardSpotify extends React.Component{
                      </a>
                      <div className={styles.text}>
                         <div className={styles.title}>
-                        {item.title.length > 26 ? (
-                              <a target="_blank" rel="noreferrer" href={item.songUrl} key={index}>{item.title.substring(0, 26)}...</a>
+                        {item.title.length > 15 ? (
+                              <a target="_blank" rel="noreferrer" href={item.songUrl} key={index}>{item.title.substring(0, 14)}...</a>
                            ):(
                               <a target="_blank" rel="noreferrer" href={item.songUrl} key={index}>{item.title}</a>
                            )}
                         </div>
-                           {item.artist.length > 16 ? (
-                              <small>{item.artist.slice(0, 15)}...</small>
+                           {item.artist.length > 10 ? (
+                              <small>{item.artist.slice(0, 9)}...</small>
                            ):(
                               <small>{item.artist}</small>
                            )}

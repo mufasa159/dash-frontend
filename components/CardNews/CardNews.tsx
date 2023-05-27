@@ -37,7 +37,7 @@ class CardNews extends Component {
    }
 
    fetchData = () => {
-      const url = "https://newsapi.org/v2/top-headlines?pageSize=6&country=us&apiKey="
+      const url = "https://newsapi.org/v2/top-headlines?category=technology&pageSize=4&country=us&apiKey="
       fetch(url + API_KEY, {
          method: 'GET',
          headers: {

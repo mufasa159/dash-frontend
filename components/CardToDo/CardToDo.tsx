@@ -35,12 +35,15 @@ export default function CardToDo(){
    let loadTodos = () => {
       // console.log("load todos")
       fetch('/api/list')
-            .then(res => res.json())
-            .then(data => {
-                  setData(data)
-                  setLoading(false)
-               }
-            )
+      .then(res => res.json())
+      .then(data => {
+         data = data.replace(/[\[\]']+/g,'')
+         data = data.replace(/"/g,'')
+         data = data.split(',')
+         console.log(data)
+         setData(data)
+         setLoading(false)
+      })
    }
 
    useEffect(() => {
