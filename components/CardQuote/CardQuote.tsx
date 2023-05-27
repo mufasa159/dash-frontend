@@ -42,11 +42,19 @@ class CardQuote extends Component {
    }
 
    fetchData = () => {
-      const url = "https://quotes.rest/qod"
+      const url = "http://localhost:8080/quote"
 
       // add other properties from theysaidso.com
 
-      fetch(url)
+      fetch(url, {
+         method: 'GET',
+         // headers: {
+         //    'Accept' : 'application/json',
+         //    'Content-Type': 'application/json',
+         //    'Authorization': 'Bearer Ex6A2gefSBWpdhW8GsHaL7zbdzM1bT6Cs2QTAXnx',
+         //    'Access-Control-Allow-Origin': '*'
+         // }
+      })
       .then((res) => res.json())
       .then((text) => this.setState({ text, currently: 'success' }))
       .catch(() => this.setState({ currently: 'error' }))
