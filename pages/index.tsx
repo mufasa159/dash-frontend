@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import styles from '../styles/Home.module.scss'
 import CardClock from "../components/CardClock/CardClock"
-// import CardCalendar from '../components/CardCalendar/CardCalendar'
+import CardCalendar from '../components/CardCalendar/CardCalendar'
 import CardNews from '../components/CardNews/CardNews'
 import CardQuote from '../components/CardQuote/CardQuote'
 import CardToDo from '../components/CardToDo/CardToDo'
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           <div className={styles.widget}><CardQuote/></div>
           <div className={styles.widget}><CardToDo/></div>
           <div className={styles.widget}><CardSpotify/></div>
-          {/* <div className={styles.widget}><CardCalendar/></div> */}
+          <div className={styles.widget}><CardCalendar/></div>
           <div className={styles.widget}><CardHabits/></div>
         </div>
     
